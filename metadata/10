@@ -1,7 +1,7 @@
 {
   "name": "Your Collection #10",
   "description": "Remember to replace this description",
-  "image": "ipfs://bafybeifz3op4deulp2gklugfr7jcmxzgbw5o3eb3pvy3dfmxnsbvcsgl6u.ipfs.dweb.link/images/10.png",
+  "image": "https://bafybeifz3op4deulp2gklugfr7jcmxzgbw5o3eb3pvy3dfmxnsbvcsgl6u.ipfs.dweb.link/images/10.png",
   "dna": "e36436fa1254e55cf46e1184fb0dafc64a777bde",
   "edition": 10,
   "date": 1660051850543,
