@@ -13,7 +13,7 @@ contract NFT is ERC721 {
   string public baseTokenURI;
 
   constructor() ERC721("NFTTutorial", "NFT") {
-    baseTokenURI = "https://bafybeiadioo4zqqnlwkpc6evce6ld5bxmblkvretyxnas2i7cvcd42yhs4.ipfs.dweb.link/metadata/";
+    baseTokenURI = "https://bafybeibzgbbqlpywfghuyo3em45yulbxpodpbnkram6slieeapap4fncca.ipfs.dweb.link/metadata/";
   }
 
   function mintTo(address recipient) public returns (uint256) {

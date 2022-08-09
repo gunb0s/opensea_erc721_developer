@@ -6,22 +6,30 @@ require("dotenv").config();
 require("@nomiclabs/hardhat-ethers");
 require("./scripts/deploy.js");
 require("./scripts/mint.js");
+require("@nomiclabs/hardhat-etherscan");
 
-const { ALCHEMY_KEY, ACCOUNT_PRIVATE_KEY } = process.env;
+const { INFURA_KEY, ACCOUNT_PRIVATE_KEY, ETHERSCAN_API_KEY } = process.env;
 
 module.exports = {
   solidity: "0.8.9",
-  defaultNetwork: "goeril",
+  defaultNetwork: "rinkeby",
   networks: {
     hardhat: {},
+    rinkeby: {
+      url: `https://rinkeby.infura.io/v3/${INFURA_KEY}`,
+      accounts: [`0x${ACCOUNT_PRIVATE_KEY}`],
+    },
     goeril: {
-      url: `https://eth-goerli.g.alchemy.com/v2/${ALCHEMY_KEY}`,
+      url: `https://goerli.infura.io/v3/${INFURA_KEY}`,
       accounts: [`0x${ACCOUNT_PRIVATE_KEY}`],
     },
     ethereum: {
       chainId: 1,
-      url: `https://eth-mainnet.alchemyapi.io/v2/${ALCHEMY_KEY}`,
+      url: `https://mainnet.infura.io/v3/${INFURA_KEY}`,
       accounts: [`0x${ACCOUNT_PRIVATE_KEY}`],
     },
+  },
+  etherscan: {
+    apiKey: ETHERSCAN_API_KEY,
   },
 };
