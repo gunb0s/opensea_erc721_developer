@@ -1,0 +1,31 @@
+{
+  "name": "Your Collection #25",
+  "description": "Remember to replace this description",
+  "image": "ipfs://bafybeifz3op4deulp2gklugfr7jcmxzgbw5o3eb3pvy3dfmxnsbvcsgl6u.ipfs.dweb.link/images/25.png",
+  "dna": "f3a226306706c62fc3b2c9ce20ce490ea484e5fa",
+  "edition": 25,
+  "date": 1660051850809,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "blue"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Nude"
+    },
+    {
+      "trait_type": "Face",
+      "value": "DarkBlue"
+    },
+    {
+      "trait_type": "Mouth",
+      "value": "Red"
+    },
+    {
+      "trait_type": "Eye",
+      "value": "Lime"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}
